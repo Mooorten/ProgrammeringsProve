@@ -1,0 +1,48 @@
+public class Servicemedarbejder extends Ansat {
+    String Speciale;
+    double timeLøn;
+
+    public Servicemedarbejder() {
+    }
+
+    public Servicemedarbejder(String speciale, double timeLøn) {
+        Speciale = speciale;
+        this.timeLøn = timeLøn;
+    }
+
+    public Servicemedarbejder(int medarbejderNr, String fnavn, String enavn, String adresse, String ansættelsesdato, String afdelingsNummer, String speciale, double timeLøn) {
+        super(medarbejderNr, fnavn, enavn, adresse, ansættelsesdato, afdelingsNummer);
+        Speciale = speciale;
+        this.timeLøn = timeLøn;
+    }
+
+    public String getSpeciale() {
+        return Speciale;
+    }
+
+    public void setSpeciale(String speciale) {
+        Speciale = speciale;
+    }
+
+    public double getTimeLøn() {
+        return timeLøn;
+    }
+
+    public void setTimeLøn(double timeLøn) {
+        this.timeLøn = timeLøn;
+    }
+
+    @Override
+    public String toString() {
+        return "Servicemedarbejder{" +
+                "Speciale='" + Speciale + '\'' +
+                ", timeLøn=" + timeLøn +
+                ", medarbejderNr=" + medarbejderNr +
+                ", fnavn='" + fnavn + '\'' +
+                ", enavn='" + enavn + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", ansættelsesdato='" + ansættelsesdato + '\'' +
+                ", afdelingsNummer='" + afdelingsNummer + '\'' +
+                '}';
+    }
+}
