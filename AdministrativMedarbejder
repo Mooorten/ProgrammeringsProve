@@ -1,0 +1,59 @@
+public class AdministrativMedarbejder extends Ansat {
+    String uddannelse;
+    double timeløn, ansættelsesgrad;
+
+    public AdministrativMedarbejder() {
+    }
+
+    public AdministrativMedarbejder(String uddannelse, double timeløn, double ansættelsesgrad) {
+        this.uddannelse = uddannelse;
+        this.timeløn = timeløn;
+        this.ansættelsesgrad = ansættelsesgrad;
+    }
+
+    public AdministrativMedarbejder(int medarbejderNr, String fnavn, String enavn, String adresse, String ansættelsesdato, String afdelingsNummer, String uddannelse, double timeløn, double ansættelsesgrad) {
+        super(medarbejderNr, fnavn, enavn, adresse, ansættelsesdato, afdelingsNummer);
+        this.uddannelse = uddannelse;
+        this.timeløn = timeløn;
+        this.ansættelsesgrad = ansættelsesgrad;
+    }
+
+    public String getUddannelse() {
+        return uddannelse;
+    }
+
+    public void setUddannelse(String uddannelse) {
+        this.uddannelse = uddannelse;
+    }
+
+    public double getTimeløn() {
+        return timeløn;
+    }
+
+    public void setTimeløn(double timeløn) {
+        this.timeløn = timeløn;
+    }
+
+    public double getAnsættelsesgrad() {
+        return ansættelsesgrad;
+    }
+
+    public void setAnsættelsesgrad(double ansættelsesgrad) {
+        this.ansættelsesgrad = ansættelsesgrad;
+    }
+
+    @Override
+    public String toString() {
+        return "AdministrativMedarbejder{" +
+                "uddannelse='" + uddannelse + '\'' +
+                ", timeløn=" + timeløn +
+                ", ansættelsesgrad=" + ansættelsesgrad +
+                ", medarbejderNr=" + medarbejderNr +
+                ", fnavn='" + fnavn + '\'' +
+                ", enavn='" + enavn + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", ansættelsesdato='" + ansættelsesdato + '\'' +
+                ", afdelingsNummer='" + afdelingsNummer + '\'' +
+                '}';
+    }
+}
